@@ -10,35 +10,7 @@
     
     <!-- AOS CSS Library for smooth scroll-driven entrance animations -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <style>
-        /* Importing Orbitron for headings and Roboto for regular text */
-        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Roboto:wght@300;400;500;700&family=Space+Mono&display=swap');
-        
-        body { font-family: 'Roboto', sans-serif; overflow-x: hidden; }
-        h1, h2, h3, .heading-font { font-family: 'Orbitron', sans-serif; }
-        .font-mono { font-family: 'Space Mono', monospace; }
-
-        /* Background Mesh Grid Animation (Light Eco-Digital Variant) */
-        @keyframes meshFlicker {
-            0% { background-position: 0px 0px; opacity: 0.4; }
-            50% { background-position: 2px -2px; opacity: 0.5; }
-            100% { background-position: 0px 0px; opacity: 0.4; }
-        }
-
-        .animated-mesh {
-            background-color: #f4f9f6;
-            background-image: 
-                linear-gradient(rgba(244, 249, 246, 0.90), rgba(240, 247, 243, 0.96)),
-                url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj48ZyBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiMwMGNjN2QiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTAgMGgxMHYxMEgtMTBWwek0xMCAxMGgxMHYxMEgtMTBWMHpNMCAxMGgxMHYxMEgtMTBWMHpNMTAgMGgxMHYxMEgtMTBWMHoiLz48L2c+PC9nPjwvc3ZnPg==');
-            background-size: initial;
-            animation: meshFlicker 8s ease-in-out infinite;
-        }
-
-        ::-webkit-scrollbar { width: 6px; }
-        ::-webkit-scrollbar-track { background: #eef5f1; }
-        ::-webkit-scrollbar-thumb { background: #c2dcd0; border-radius: 10px; }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="animated-mesh text-slate-700 font-light">
