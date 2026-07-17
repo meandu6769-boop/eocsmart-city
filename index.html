@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EcoSmart City — Designing a Sustainable Future</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:
+wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo"><span class="dot"></span>EcoSmart City</a>
+    <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" id="menuToggle">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="menu" id="mainMenu">
+      <a href="index.html" class="current">Home</a>
+      <a href="smart-solutions.html">Smart Solutions</a>
+      <a href="innovation-gallery.html">Innovation Gallery</a>
+      <a href="future.html">Future Technologies</a>
+      <a href="contact.html">Contact &amp; Feedback</a>
+      <a href="smart-solutions.html" class="nav-cta">Explore Solutions</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="home">
+    <div class="wrap hero-inner">
+      <div class="hero-copy">
+        <span class="eyebrow">Municipal Innovation Initiative</span>
+        <h1>Building the <span class="accent">EcoSmart City</span> of tomorrow, today.</h1>
+        <p class="slogan">Designing a Sustainable Future — Cleaner Air. Smarter Streets. Greener Living.</p>
+        <p class="lede">Our city faces real pressure — smog-thick traffic, overflowing landfills, rising energy bills. EcoSmart City is an interactive guide to the technologies and habits turning those problems into opportunities for every citizen.</p>
+        <div class="hero-actions">
+          <a href="smart-solutions.html" class="btn-primary">
+            Explore Solutions
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+          <a href="#intro" class="btn-secondary">Learn More</a>
+        </div>
+        <div class="hero-stats">
+          <div><div class="num">40%</div><div class="label">Less Emissions</div></div>
+          <div><div class="num">24/7</div><div class="label">Smart Monitoring</div></div>
+          <div><div class="num">100+</div><div class="label">Green Innovations</div></div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="skyline-frame">
+          <svg viewBox="0 0 600 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of a city skyline transforming from a polluted grey cityscape into a green, solar and wind powered smart city">
+            <defs>
+              <linearGradient id="skyGrad" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0%" stop-color="#b7bdb8"/>
+                <stop offset="52%" stop-color="#cfeaf0"/>
+                <stop offset="100%" stop-color="#e7f7ec"/>
+              </linearGradient>
+              <linearGradient id="groundGrad" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0%" stop-color="#6b7570"/>
+                <stop offset="55%" stop-color="#5f8f6a"/>
+                <stop offset="100%" stop-color="#3f9e63"/>
+              </linearGradient>
+            </defs>
+
+            <rect width="600" height="420" fill="url(#skyGrad)"/>
+
+            <ellipse class="cloud" cx="95" cy="90" rx="90" ry="26" fill="#9aa39c" opacity="0.55"/>
+            <ellipse class="cloud c2" cx="180" cy="60" rx="70" ry="20" fill="#a8b0a8" opacity="0.45"/>
+            <ellipse class="cloud" cx="470" cy="70" rx="60" ry="18" fill="#ffffff" opacity="0.85"/>
+            <ellipse class="cloud c2" cx="530" cy="105" rx="44" ry="14" fill="#ffffff" opacity="0.7"/>
+
+            <circle class="sun" cx="500" cy="130" r="30" fill="#ffb347" opacity="0.9"/>
+
+            <rect x="0" y="330" width="600" height="90" fill="url(#groundGrad)"/>
+
+            <g opacity="0.92">
+              <rect x="20" y="200" width="34" height="130" fill="#5b6568"/>
+              <rect x="60" y="160" width="28" height="170" fill="#6c7679"/>
+              <rect x="94" y="220" width="40" height="110" fill="#54606a"/>
+              <rect x="140" y="180" width="26" height="150" fill="#63706f"/>
+              <g fill="#dfe4de" opacity="0.5">
+                <rect x="26" y="212" width="6" height="8"/><rect x="40" y="212" width="6" height="8"/>
+                <rect x="26" y="232" width="6" height="8"/><rect x="40" y="232" width="6" height="8"/>
+                <rect x="67" y="175" width="6" height="8"/><rect x="79" y="175" width="6" height="8"/>
+                <rect x="67" y="195" width="6" height="8"/><rect x="79" y="195" width="6" height="8"/>
+              </g>
+              <rect x="105" y="195" width="8" height="26" fill="#45525a"/>
+              <ellipse cx="109" cy="188" rx="10" ry="7" fill="#9aa39c" opacity="0.7"/>
+              <ellipse cx="118" cy="172" rx="14" ry="9" fill="#a8b0a8" opacity="0.55"/>
+              <rect x="0" y="330" width="230" height="10" fill="#374046"/>
+              <rect x="25" y="333" width="16" height="7" rx="1.5" fill="#c0432f"/>
+              <rect x="55" y="333" width="16" height="7" rx="1.5" fill="#3d3d3d"/>
+              <rect x="90" y="333" width="16" height="7" rx="1.5" fill="#8a7a3f"/>
+              <rect x="130" y="333" width="16" height="7" rx="1.5" fill="#3d3d3d"/>
+              <rect x="170" y="333" width="16" height="7" rx="1.5" fill="#5a4a4a"/>
+            </g>
+
+            <line x1="290" y1="0" x2="330" y2="420" stroke="#ffffff" stroke-opacity="0.35" stroke-width="2" stroke-dasharray="6 6"/>
+
+            <g>
+              <circle cx="360" cy="305" r="16" fill="#4caf7d"/>
+              <rect x="357" y="315" width="6" height="15" fill="#7a5a3a"/>
+              <circle cx="560" cy="300" r="18" fill="#3f9e63"/>
+              <rect x="556" y="312" width="6" height="18" fill="#7a5a3a"/>
+
+              <rect x="400" y="230" width="34" height="100" fill="#136b60"/>
+              <rect x="400" y="222" width="34" height="8" fill="#0b4f4a"/>
+              <g fill="#a8d8c9">
+                <rect x="405" y="223" width="6" height="6"/><rect x="415" y="223" width="6" height="6"/><rect x="425" y="223" width="6" height="6"/>
+              </g>
+              <rect x="444" y="255" width="30" height="75" fill="#1f7c6e"/>
+              <rect x="444" y="247" width="30" height="8" fill="#0b4f4a"/>
+              <g fill="#a8d8c9">
+                <rect x="449" y="248" width="6" height="6"/><rect x="459" y="248" width="6" height="6"/><rect x="469" y="248" width="6" height="6"/>
+              </g>
+              <rect x="484" y="200" width="34" height="130" fill="#0b4f4a"/>
+              <g fill="#dff2e8" opacity="0.85">
+                <rect x="490" y="212" width="6" height="7"/><rect x="502" y="212" width="6" height="7"/>
+                <rect x="490" y="230" width="6" height="7"/><rect x="502" y="230" width="6" height="7"/>
+                <rect x="490" y="248" width="6" height="7"/><rect x="502" y="248" width="6" height="7"/>
+              </g>
+
+              <line x1="380" y1="330" x2="380" y2="245" stroke="#45525a" stroke-width="3"/>
+              <g class="turbine-blades" transform="translate(380,245)">
+                <path d="M0 0 L4 -34 L8 0 Z" fill="#e7f7ec" stroke="#45525a" stroke-width="1"/>
+                <path d="M0 0 L-30 16 L-4 8 Z" fill="#e7f7ec" stroke="#45525a" stroke-width="1"/>
+                <path d="M0 0 L26 20 L4 8 Z" fill="#e7f7ec" stroke="#45525a" stroke-width="1"/>
+                <circle r="3" fill="#45525a"/>
+              </g>
+
+              <rect x="340" y="330" width="260" height="10" fill="#2f8f5f"/>
+              <rect x="365" y="333" width="16" height="7" rx="1.5" fill="#2c7a5f" opacity="0.9"/>
+              <circle cx="420" cy="337" r="4.5" fill="none" stroke="#0b4f4a" stroke-width="2"/>
+              <circle cx="436" cy="337" r="4.5" fill="none" stroke="#0b4f4a" stroke-width="2"/>
+              <line x1="420" y1="333" x2="436" y2="333" stroke="#0b4f4a" stroke-width="2"/>
+            </g>
+          </svg>
+          <div class="skyline-caption">
+            <span>◀ Today: congestion &amp; smog</span>
+            <span>Tomorrow: clean &amp; connected ▶</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= INTRO: WHAT IS A SMART CITY ================= -->
+  <section class="intro" id="intro">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Getting Started</span>
+        <h2>What exactly is a smart city?</h2>
+        <p>Before diving into solutions, it helps to understand the idea driving this whole project.</p>
+      </div>
+
+      <div class="intro-grid">
+        <div class="intro-copy">
+          <p>A <strong>smart city</strong> uses data, connected sensors, and digital technology to manage everyday urban systems — traffic, water, waste, electricity — more efficiently than traditional infrastructure ever could.</p>
+          <p>Instead of reacting to problems after they happen, a smart city <strong>predicts and prevents</strong> them: streetlights that dim when no one's around, bins that signal when they're full, buses that reroute around jams in real time.</p>
+          <p>The goal isn't just "more technology." It's a city that is <strong>cleaner, more efficient, and more liveable</strong> for every resident — built on renewable energy, shared mobility, and smarter use of resources.</p>
+        </div>
+
+        <div class="pillar-list">
+          <div class="pillar">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 11-14h-7l1-6z"/></svg></div>
+            <div><h4>Connected</h4><p>Sensors and networks that share real-time city data.</p></div>
+          </div>
+          <div class="pillar">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/></svg></div>
+            <div><h4>Renewable</h4><p>Solar and wind power replacing fossil-fuel dependence.</p></div>
+          </div>
+          <div class="pillar">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12l2-2 4 4 8-8 4 4"/><path d="M3 20h18"/></svg></div>
+            <div><h4>Efficient</h4><p>Resources routed where they're actually needed.</p></div>
+          </div>
+          <div class="pillar">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.5-9.5-9.5C.5 7 3 3 7 3c2 0 4 1.5 5 3.5C13 4.5 15 3 17 3c4 0 6.5 4 4.5 8.5C19 16.5 12 21 12 21z"/></svg></div>
+            <div><h4>Liveable</h4><p>Cleaner air, quieter streets, healthier residents.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CHALLENGES ================= -->
+  <section class="challenges" id="challenges">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">The Problem</span>
+        <h2>What our city is up against</h2>
+        <p>Four pressures are shaping daily life for every citizen — and every one of them has a smart solution.</p>
+      </div>
+
+      <div class="challenge-grid">
+        <div class="challenge-card">
+          <span class="cnum">Challenge</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 16a5 5 0 1 1 3-9M17 20a4 4 0 0 0-1-7.8M3 20h14"/></svg>
+          <h3>Air Pollution</h3>
+          <p>Vehicle exhaust and industrial smoke are pushing air quality to unhealthy levels citywide.</p>
+        </div>
+        <div class="challenge-card">
+          <span class="cnum">Challenge</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="7" width="15" height="10" rx="1"/><path d="M16 10h4l3 3v4h-7z"/><circle cx="5.5" cy="18.5" r="1.5"/><circle cx="18.5" cy="18.5" r="1.5"/></svg>
+          <h3>Traffic Congestion</h3>
+          <p>Rush-hour gridlock wastes commuting hours and burns fuel for no forward progress.</p>
+        </div>
+        <div class="challenge-card">
+          <span class="cnum">Challenge</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2m3 0-1 14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2L4 6"/></svg>
+          <h3>Excessive Waste</h3>
+          <p>Landfills are filling faster than they can be managed, with too little going to recycling.</p>
+        </div>
+        <div class="challenge-card">
+          <span class="cnum">Challenge</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 11-14h-7l1-6z"/></svg>
+          <h3>Energy Consumption</h3>
+          <p>Peak demand keeps straining the grid, mostly powered by non-renewable sources.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CTA BAND ================= -->
+  <section>
+    <div class="cta-band">
+      <div>
+        <h2>Ready to see how it's actually done?</h2>
+        <p>Walk through real, deployable smart-city solutions — from sensor-based waste bins to solar micro-grids.</p>
+      </div>
+      <a href="smart-solutions.html" class="btn-primary">
+        Explore Solutions
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><span class="dot"></span>EcoSmart City</a>
+        <p>An interactive guide to smarter, greener, healthier urban living — built for our city's future.</p>
+      </div>
+      <div>
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="smart-solutions.html">Smart Solutions</a></li>
+          <li><a href="innovation-gallery.html">Innovation Gallery</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Learn</h5>
+        <ul>
+          <li><a href="future-technologies.html">Future Technologies</a></li>
+          <li><a href="#intro">What is a Smart City?</a></li>
+          <li><a href="#challenges">City Challenges</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Connect</h5>
+        <ul>
+          <li><a href="contact-feedback.html">Contact &amp; Feedback</a></li>
+          <li><a href="mailto:hello@ecosmartcity.example">hello@ecosmartcity.example</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 EcoSmart City — A Municipal Innovation Student Project.</span>
+      <span>Designed for a Sustainable Future.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('menuToggle');
+  const menu = document.getElementById('mainMenu');
+  toggle.addEventListener('click', () => {
+    const isOpen = menu.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', isOpen);
+  });
+  menu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      menu.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+</script>
+
+</body>
+</html>

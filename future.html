@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoSmart City | Smart Cities & Sustainable Infrastructure</title>
+    
+    <!-- Tailwind CSS CDN for modern grid layouts and utilities -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- AOS CSS Library for smooth scroll-driven entrance animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        /* Importing Orbitron for headings and Roboto for regular text */
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Roboto:wght@300;400;500;700&family=Space+Mono&display=swap');
+        
+        body { font-family: 'Roboto', sans-serif; overflow-x: hidden; }
+        h1, h2, h3, .heading-font { font-family: 'Orbitron', sans-serif; }
+        .font-mono { font-family: 'Space Mono', monospace; }
+
+        /* Background Mesh Grid Animation (Light Eco-Digital Variant) */
+        @keyframes meshFlicker {
+            0% { background-position: 0px 0px; opacity: 0.4; }
+            50% { background-position: 2px -2px; opacity: 0.5; }
+            100% { background-position: 0px 0px; opacity: 0.4; }
+        }
+
+        .animated-mesh {
+            background-color: #f4f9f6;
+            background-image: 
+                linear-gradient(rgba(244, 249, 246, 0.90), rgba(240, 247, 243, 0.96)),
+                url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj48ZyBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiMwMGNjN2QiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTAgMGgxMHYxMEgtMTBWwek0xMCAxMGgxMHYxMEgtMTBWMHpNMCAxMGgxMHYxMEgtMTBWMHpNMTAgMGgxMHYxMEgtMTBWMHoiLz48L2c+PC9nPjwvc3ZnPg==');
+            background-size: initial;
+            animation: meshFlicker 8s ease-in-out infinite;
+        }
+
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #eef5f1; }
+        ::-webkit-scrollbar-thumb { background: #c2dcd0; border-radius: 10px; }
+    </style>
+</head>
+
+<body class="animated-mesh text-slate-700 font-light">
+
+    <!-- Top Navigation Bar (Unchanged) -->
+    <nav class="sticky top-0 z-50 border-b border-slate-100 bg-[#fbfcfb]/95 backdrop-blur-md transition-all">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            
+            <!-- Logo Section -->
+            <div class="flex items-center gap-2.5 font-bold text-[#0f4c43] text-xl tracking-wide heading-font">
+                <span class="h-4 w-4 rounded-full bg-[#52b788] inline-block shadow-sm"></span>
+                EcoSmart City
+            </div>
+            
+            <!-- Links Section -->
+            <div class="hidden lg:flex items-center gap-6 font-medium text-[#3a5a40]">
+                <a href="index.html" class="bg-[#0f4c43] text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:opacity-90 transition-all">Home</a>
+                <a href="smart-solutions.html" class="hover:text-[#0f4c43] text-sm transition-colors duration-200">Smart Solutions</a>
+                <a href="innovation-gallery.html" class="hover:text-[#0f4c43] text-sm transition-colors duration-200">Innovation Gallery</a>
+                <a href="future.html" class="hover:text-[#0f4c43] text-sm transition-colors duration-200">Future Technologies</a>
+            </div>
+
+            <!-- Action CTA Button -->
+            <div>
+                <a href="#" class="bg-[#ffb03a] hover:bg-[#efa12a] text-[#0f4c43] px-6 py-3 rounded-full text-sm font-bold tracking-wide transition-all shadow-sm">
+                    Explore Solutions
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="relative overflow-hidden bg-emerald-50/40 py-28 border-b border-emerald-100/60">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,_rgba(16,185,129,0.08),_rgba(244,249,246,0)_40%)]"></div>
+        <div class="max-w-4xl mx-auto px-6 text-center relative z-10" data-aos="fade-up" data-aos-duration="1000">
+            <span class="font-mono text-emerald-600 text-xs font-bold tracking-widest uppercase bg-emerald-100/60 px-3.5 py-1.5 rounded-full border border-emerald-200/60 shadow-sm">
+                Sustainable Infrastructure / Pillars
+            </span>
+            <h1 class="mt-6 text-3xl sm:text-5xl font-black tracking-tight text-slate-900 leading-tight">
+                Welcome to <span class="text-[#0f4c43]">EcoSmart City</span> Platforms
+            </h1>
+            <p class="mt-5 text-slate-600 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed font-normal">
+                An analysis of the foundational technologies transforming urban areas into responsive, efficient, and interconnected digital grids.
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Technologies Grid -->
+    <main class="max-w-7xl mx-auto px-6 py-20">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- 1. Artificial Intelligence -->
+            <section data-aos="fade-up" data-aos-duration="600" data-aos-delay="100" class="group bg-white border border-slate-200/80 rounded-2xl p-6 transition-all duration-300 hover:border-emerald-400 hover:-translate-y-1 hover:shadow-xl hover:shadow-emerald-500/5 flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center justify-between mb-5">
+                        <div class="p-3 bg-emerald-50 text-emerald-600 rounded-xl border border-emerald-100 group-hover:scale-110 transition-transform duration-300">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+                        </div>
+                        <span class="font-mono text-xs text-slate-400">ID / 1101_AI</span>
+                    </div>
+                    <h2 class="text-lg font-bold text-slate-900 mb-2 tracking-wide">Artificial Intelligence</h2>
+                    <p class="text-slate-600 text-sm leading-relaxed font-normal">Serves as the central urban brain. AI processes huge parallel streams of data to automate resource networks and civil configurations.</p>
+                </div>
+                <div class="mt-6 border-t border-slate-100 pt-4"><h3 class="font-mono text-xs font-bold uppercase tracking-wider text-emerald-600 mb-1">Real-Life Application</h3><p class="text-xs text-slate-500 font-normal">Predictive logistics allocation maps.</p></div>
+            </section>
+
+            <!-- 2. Internet of Things -->
+            <section data-aos="fade-up" data-aos-duration="600" data-aos-delay="200" class="group bg-white border border-slate-200/80 rounded-2xl p-6 transition-all duration-300 hover:border-emerald-400 hover:-translate-y-1 hover:shadow-xl flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center justify-between mb-5">
+                        <div class="p-3 bg-emerald-50 text-emerald-600 rounded-xl border border-emerald-100 group-hover:scale-110 transition-transform duration-300">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11 4a2 2 0 114 0v1a2 2 0 01-2 2 2 2 0 01-2-2V4zm-4 7a2 2 0 114 0v1a2 2 0 01-2 2 2 2 0 01-2-2v-1zm8 0a2 2 0 114 0v1a2 2 0 01-2 2 2 2 0 01-2-2v-1z"/></svg>
+                        </div>
+                        <span class="font-mono text-xs text-slate-400">ID / 1102_IOT</span>
+                    </div>
+                    <h2 class="text-lg font-bold text-slate-900 mb-2 tracking-wide">Internet of Things</h2>
+                    <p class="text-slate-600 text-sm leading-relaxed font-normal">The digital framework linking structural components to processing arrays to optimize everyday municipal services.</p>
+                </div>
+                <div class="mt-6 border-t border-slate-100 pt-4"><h3 class="font-mono text-xs font-bold uppercase tracking-wider text-emerald-600 mb-1">Real-Life Application</h3><p class="text-xs text-slate-500 font-normal">Telemetry reporting smart sanitization hardware bins.</p></div>
+            </section>
+
+            <!-- 3. Smart Sensors -->
+            <section data-aos="fade-up" data-aos-duration="600" data-aos-delay="300" class="group bg-white border border-slate-200/80 rounded-2xl p-6 transition-all duration-300 hover:border-emerald-400 hover:-translate-y-1 hover:shadow-xl flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center justify-between mb-5">
+                        <div class="p-3 bg-emerald-50 text-emerald-600 rounded-xl border border-emerald-100 group-hover:scale-110 transition-transform duration-300">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                        </div>
+                        <span class="font-mono text-xs text-slate-400">ID / 1103_SNS</span>
+                    </div>
+                    <h2 class="text-lg font-bold text-slate-900 mb-2 tracking-wide">Smart Sensors</h2>
+                    <p class="text-slate-600 text-sm leading-relaxed font-normal">Low-power sensory arrays mapping metrics like structural shifts, fluid speeds, and air quality index limits.</p>
+                </div>
+                <div class="mt-6 border-t border-slate-100 pt-4"><h3 class="font-mono text-xs font-bold uppercase tracking-wider text-emerald-600 mb-1">Real-Life Application</h3><p class="text-xs text-slate-500 font-normal">Piezoelectric bridge load structural nodes.</p></div>
+            </section>
+
+            <!-- 4. Electric Vehicles -->
+            <section data-aos="fade-up" data-aos-duration="600" data-aos-delay="100" class="group bg-white border border-slate-200/80 rounded-2xl p-6 transition-all duration-300 hover:border-emerald-400 hover:-translate-y-1 hover:shadow-xl flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center justify-between mb-5">
+                        <div class="p-3 bg-emerald-50 text-emerald-600 rounded-xl border border-emerald-100 group-hover:scale-110 transition-transform duration-300">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6M2 8h20v8H2V8z"/></svg>
+                        </div>
+                        <span class="font-mono text-xs text-slate-400">ID / 1104_EV</span>
+                    </div>
+                    <h2 class="text-lg font-bold text-slate-900 mb-2 tracking-wide">Electric Vehicles</h2>
+                    <p class="text-slate-600 text-sm leading-relaxed font-normal">Automated regional vehicle systems running dynamic grids via distributed Vehicle-to-Grid (V2G) architecture.</p>
+                </div>
+                <div class="mt-6 border-t border-slate-100 pt-4"><h3 class="font-mono text-xs font-bold uppercase tracking-wider text-emerald-600 mb-1">Real-Life Application</h3><p class="text-xs text-slate-500 font-normal">Inductive roadway transit charging fields.</p></div>
+            </section>
+
+            <!-- 5. Solar Energy Systems -->
+            <section data-aos="fade-up" data-aos-duration="600" data-aos-delay="200" class="group bg-white border border-slate-200/80 rounded-2xl p-6 transition-all duration-300 hover:border-emerald-400 hover:-translate-y-1 hover:shadow-xl flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center justify-between mb-5">
+                        <div class="p-3 bg-emerald-50 text-emerald-600 rounded-xl border border-emerald-100 group-hover:scale-110 transition-transform duration-300">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m12.728 0l-.707-.707M6.343 6.343l-.707-.707M12 7a5 5 0 100 10 5 5 0 000-10z"/></svg>
+                        </div>
+                        <span class="font-mono text-xs text-slate-400">ID / 1105_SOL</span>
+                    </div>
+                    <h2 class="text-lg font-bold text-slate-900 mb-2 tracking-wide">Solar Energy</h2>
+                    <p class="text-slate-600 text-sm leading-relaxed font-normal">Integrated architectural surfaces generating distributed regional electricity straight out of window structural materials.</p>
+                </div>
+                <div class="mt-6 border-t border-slate-100 pt-4"><h3 class="font-mono text-xs font-bold uppercase tracking-wider text-emerald-600 mb-1">Real-Life Application</h3><p class="text-xs text-slate-500 font-normal">Photovoltaic window building surfaces.</p></div>
+            </section>
+
+            <!-- 6. Autonomous Drones -->
+            <section data-aos="fade-up" data-aos-duration="600" data-aos-delay="300" class="group bg-white border border-slate-200/80 rounded-2xl p-6 transition-all duration-300 hover:border-emerald-400 hover:-translate-y-1 hover:shadow-xl flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center justify-between mb-5">
+                        <div class="p-3 bg-emerald-50 text-emerald-600 rounded-xl border border-emerald-100 group-hover:scale-110 transition-transform duration-300">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
+                        </div>
+                        <span class="font-mono text-xs text-slate-400">ID / 1106_DRN</span>
+                    </div>
+                    <h2 class="text-lg font-bold text-slate-900 mb-2 tracking-wide">Autonomous Drones</h2>
+                    <p class="text-slate-600 text-sm leading-relaxed font-normal">Aerial systems deployed for structural monitoring sweeps, data verification, and emergency fast-response infrastructure support.</p>
+                </div>
+                <div class="mt-6 border-t border-slate-100 pt-4"><h3 class="font-mono text-xs font-bold uppercase tracking-wider text-emerald-600 mb-1">Real-Life Application</h3><p class="text-xs text-slate-500 font-normal">Automated medical equipment delivery.</p></div>
+            </section>
+
+            <!-- Pillar #7: Smart Traffic System -->
+            <section data-aos="fade-up" data-aos-duration="800" class="group bg-white border border-slate-200 rounded-2xl p-6 md:col-span-2 lg:col-span-3 transition-all hover:border-emerald-400 hover:shadow-xl">
+                <div class="lg:flex lg:items-center lg:gap-10">
+                    <div class="lg:w-1/2">
+                        <div class="flex items-center justify-between mb-5">
+                            <div class="p-3.5 bg-emerald-50 text-emerald-600 rounded-2xl border border-emerald-100 group-hover:rotate-12 transition-transform duration-300 shadow-sm">
+                                <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/></svg>
+                            </div>
+                            <span class="font-mono text-xs text-slate-400">ID / 1107_TSYS</span>
+                        </div>
+                        <h2 class="text-xl sm:text-2xl font-bold text-slate-900 mb-3 tracking-wide leading-tight">Smart Traffic Management</h2>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-5 font-normal">
+                            Replaces static stoplight intervals completely. Deep computer-vision models calculate intersection congestion variables in real time, making traffic lights respond perfectly to actual vehicle flow.
+                        </p>
+                        <div class="border-t border-slate-100 pt-4">
+                            <h3 class="font-mono text-xs font-bold uppercase tracking-wider text-emerald-600 mb-1.5">Real-Life Application</h3>
+                            <p class="text-xs text-slate-500 leading-relaxed font-normal">Dynamic green light corridor syncing systems for public transit and emergency fleets.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- HIGH CONTRAST IMAGE CONTAINER -->
+                    <div class="mt-8 lg:mt-0 lg:w-1/2 border border-slate-200 rounded-2xl overflow-hidden aspect-video bg-slate-900 shadow-lg relative group">
+                        <div class="absolute inset-0 bg-gradient-to-tr from-slate-950/20 via-transparent to-transparent z-10"></div>
+                        <img src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcQ7nRBJh0-ch67nHxDC5IL7YkzVeQdbahtcjBEEB-HwWvxQrbD8en9q-5yDgUeAv332640g8iqcsou7YbY" alt="A computerized digital twin model of urban traffic data lanes and signals" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 block" />
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Visual Ecosystem Integration Section -->
+    <section class="bg-emerald-50/30 border-t border-emerald-100 py-24">
+        <div class="max-w-4xl mx-auto px-6 text-center" data-aos="zoom-in" data-aos-duration="1000">
+            <h2 class="text-xl sm:text-2xl font-bold text-slate-900 mb-3 tracking-wide">Decentralized Data Mesh</h2>
+            <p class="text-slate-600 text-sm max-w-lg mx-auto mb-12 leading-relaxed font-normal">
+                A conceptual diagram showing how individual IoT sensory endpoints upload real-time telemetry to central cloud analytics dashboards.
+            </p>
+            
+            <!-- HIGH CONTRAST MESH CONTAINER -->
+            <div class="border border-emerald-200 rounded-3xl overflow-hidden bg-white shadow-xl group p-4">
+                <img src="https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcTEFpJxp6K6Qn6Fu3m2bl5xLAK0t7ZoqZUAp7_k53p1x39o8KbT5uxDm2aFYw_QX6F69mkEvCvUvBmfZCw" alt="Vector infographic diagram illustrating smart building sensors connected to solar grids" class="w-full object-cover group-hover:scale-[1.01] transition-transform duration-700 ease-in-out block rounded-2xl border border-slate-100" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer System -->
+    <footer class="bg-emerald-50/50 border-t border-emerald-100 text-slate-400 font-mono text-center text-xs py-10">
+        &copy; 2026 EcoSmart City Systems // R&D Framework
+    </footer>
+
+    <!-- AOS JavaScript Script Injection & Initialization -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            mirror: false
+        });
+    </script>
+</body>
+</html>

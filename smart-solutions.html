@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco Smart-Designing a Sustainable Future</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<style>
+    * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        
+        h1, h2, h3, h4, h5, h6 { font-family: 'Orbitron', sans-serif; letter-spacing: 0.03em; }
+        body, p, span, a, li { font-family: 'Roboto', sans-serif; }
+        
+        :root {
+            --primary: #10b981; 
+            --primary-hover: #059669;
+            --dark: #0f172a; 
+            --text-main: #334155; 
+            --text-muted: #64748b; 
+            --bg-light: #f8fafc; 
+            --border-color: #e2e8f0; 
+            --font-sans: 'Inter', -apple-system, BlinkMacSyst, sans-serif;
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            color: var(--text-main);
+            background-color: #ffffff;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        
+        header.site-header {
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            z-index: 100;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--dark);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .logo-dot {
+            width: 10px;
+            height: 10px;
+            background-color: var(--primary);
+            border-radius: 50%;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-muted);
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover {
+            color: var(--dark);
+        }
+
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        
+        .hero {
+            padding: 100px 0 80px 0;
+            text-align: left;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: #ecfdf5;
+            color: #065f46;
+            font-size: 0.85rem;
+            font-weight: 600;
+            padding: 6px 16px;
+            border-radius: 20px;
+            margin-bottom: 24px;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: var(--dark);
+            line-height: 1.2;
+            margin-bottom: 24px;
+            letter-spacing: -0.03em;
+            max-width: 800px;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            max-width: 750px;
+            margin-bottom: 36px;
+            font-weight: 400;
+        }
+
+        
+        .btn-primary {
+            display: inline-block;
+            background-color: var(--primary);
+            color: #ffffff;
+            font-weight: 600;
+            padding: 16px 32px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 1rem;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-hover);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        
+        section {
+            padding: 100px 0;
+        }
+
+        .bg-section {
+            background-color: var(--bg-light);
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 64px auto;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 16px;
+            letter-spacing: -0.02em;
+        }
+
+        .section-subtitle {
+            font-size: 1.125rem;
+            color: var(--text-muted);
+        }
+
+        
+        .grid-layout {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 32px;
+        }
+
+        .card {
+            background: #ffffff;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+            border-color: #cbd5e1;
+        }
+
+        
+        .card-image-container {
+            width: 64px;
+            height: 64px;
+            border-radius: 12px;
+            margin-bottom: 24px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .card-image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            font-size: 1.35rem;
+            font-weight: 600;
+            color: var(--dark);
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            font-size: 1rem;
+            color: var(--text-main);
+            font-weight: 400;
+        }
+
+        
+        footer {
+            background-color: var(--dark);
+            color: #94a3b8;
+            padding: 60px 0;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            margin-bottom: 8px;
+        }
+
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            .hero p {
+                font-size: 1.1rem;
+            }
+            .section-title {
+                font-size: 2rem;
+            }
+            .nav-links {
+                display: none;
+            }
+        }
+        .grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+    width: 100%;
+}
+
+
+.card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 32px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(15, 23, 42, 0.05);
+    border-color: #cbd5e1;
+}
+
+
+.card-image-box {
+    width: 100%;
+    height: 160px;
+    border-radius: 6px;
+    margin-bottom: 24px;
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+}
+
+.card-image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:hover .card-image-box img {
+    transform: scale(1.03);
+}
+
+/* Typography Accents */
+.card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #0f172a;
+    margin-bottom: 10px;
+    letter-spacing: -0.01em;
+}
+
+.card p {
+    font-size: 0.95rem;
+    color: #334155;
+    line-height: 1.6;
+}
+    </style>
+</head>
+<body>
+
+    
+
+    <div class="container">
+        
+        <header class="site-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo"><span class="dot"></span>EcoSmart City</a>
+    <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" id="menuToggle">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="menu" id="mainMenu">
+      <a href="index.html" class="current">Home</a>
+      <a href="smart-solutions.html">Smart Solutions</a>
+      <a href="innovation-gallery.html">Innovation Gallery</a>
+      <a href="future.html">Future Technologies</a>
+      <a href="contact.html">Contact &amp; Feedback</a>
+      <a href="smart-solutions.html" class="nav-cta">Explore Solutions</a>
+    </nav>
+  </div>
+</header>
+        <header class="hero">
+            <span class="badge">Urban Infrastructure Initiative</span>
+            <h1>Smart Solutions for a Choked City</h1>
+            <p>Our cities are facing an unprecedented environmental crisis. We build smart, data-driven technologies designed to restore air quality, eliminate plastic runoff, and transition urban hubs into self-sustaining ecosystems.</p>
+            <a href="#blueprint" class="btn-primary">Explore Our Blueprints</a>
+        </header>
+
+    </div>
+
+
+    <section id="reality" class="bg-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">The Current Urban Reality</h2>
+                <p class="section-subtitle">Modern environments are battling a critical, interconnected triad of environmental decay.</p>
+            </div>
+
+            <div class="grid-layout">
+                
+                <div class="card">
+                    <div class="card-image-container">
+                        <img src="https://images.unsplash.com/photo-1530587191325-3db32d826c18?auto=format&fit=crop&w=150&q=80" alt="Smog and air pollution">
+                    </div>
+                    <h3>Air Pollution & Smog</h3>
+                    <p>Industrial emissions and heavy traffic density have dropped the Air Quality Index (AQI) to hazardous levels, leading to high-risk systemic public health issues.</p>
+                </div>
+
+                
+                <div class="card">
+                    <div class="card-image-container">
+                        <img src="https://images.unsplash.com/photo-1611284446314-60a58ac0deb9?auto=format&fit=crop&w=150&q=80" alt="Plastic waste pile">
+                    </div>
+                    <h3>Mismanaged Waste</h3>
+                    <p>Overflowing urban landfills and microplastics degrade municipal corridors, creating critical soil pollution and permanent toxic runoff issues.</p>
+                </div>
+
+                <!-- Reality Card 3 -->
+                <div class="card">
+                    <div class="card-image-container">
+                        <img src="https://images.unsplash.com/photo-1617155093730-a8bf47be792d?auto=format&fit=crop&w=150&q=80" alt="Polluted toxic water">
+                    </div>
+                    <h3>Contaminated Waterways</h3>
+                    <p>Untreated chemical effluents and heavy domestic waste flow unchecked into municipal rivers, destroying localized aquatic biodiversity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="blueprint">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">The Smart Solution Blueprint</h2>
+                <p class="section-subtitle">How we transform failing urban infrastructure into a thriving, self-sustaining Eco City grid.</p>
+            </div>
+            <div class="grid-layout">
+    
+    
+    <div class="card">
+        <div class="card-image-box">
+            <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=400&q=80" alt="Smart sustainable solar towers">
+        </div>
+        <h3>IoT Air Purification Grids</h3>
+        <p>Deploying standalone telemetry air filtration grids that utilize real-time environmental sensory feedback loops to adjust air extraction matrix systems dynamically.</p>
+    </div>
+
+    
+    <div class="card">
+        <div class="card-image-box">
+            <img src="https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?auto=format&fit=crop&w=400&q=80" alt="Clean energy generation plant">
+        </div>
+        <h3>Automated Waste-to-Energy</h3>
+        <p>Integrating machine-learning sortation lines that reliably divert organic waste into municipal high-efficiency bioreactors, converting local metrics directly into supplemental power grid reserves.</p>
+    </div>
+
+    
+    <div class="card">
+        <div class="card-image-box">
+            <img src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?auto=format&fit=crop&w=400&q=80" alt="Protected natural wetland buffers">
+        </div>
+        <h3>Bio-Retention Waterways</h3>
+        <p>Developing automated natural filter zones using native bioretention ecology frameworks to arrest and refine city surface runoff before interacting with natural reservoirs.</p>
+    </div>
+
+</div>
+
+            
+
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 EcoGrid Solutions Inc. All rights reserved.</p>
+            <p style="font-size: 0.8rem; color: #64748b;">Building technology for the next generation of smart, resilient cities.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
